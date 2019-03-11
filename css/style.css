@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900');
+
+/*-------------------------------- Normalizacion --------------------------------*/
+
+html, body, section, .page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*---------------------------------- ScrollBar ----------------------------------*/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #374046; 
+}
+
+/*------------------------------------ Ancho -----------------------------------*/
+
+.aauto {width:auto;}
+.a130 {width: 130%;}
+.a100 {width: 100%;}
+.a55 {width: 55%}
+.a74 {width: 74%}
+.a20 {width:20%}
+.a6 {width:6%}
+.a5 {width:5%}
+
+/*------------------------------------ Largo -----------------------------------*/
+
+.lauto {height: auto;}
+.l200 {height: 200%;}
+.l100 {height: 100%;}
+.l40 {height: 40%;}
+.l30 {height: 20%;}
+.l10 {height: 10%;}
+.l5 {height: 5%;}
+
+/*----------------------------------- Colores ----------------------------------*/
+
+.blanco {background-color: white;}
+.blue {background-color: blue;}
+.red {background-color: red;}
+.orange {background-color: orange;}
+
+.tblanco {color:white;}
+
+/*---------------------------------- Imagenes ----------------------------------*/
+
+.back{background: url(../img/wall2.jpg) center center / cover no-repeat;}
+
+.logo{
+    background: url(../img/logon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 12%;
+    margin: auto;
+}
+
+/*--------------------------------- Posiciones ---------------------------------*/
+
+.fl {float: left;}
+.fr {float: right;}
+
+.cvl{display: flex;
+    align-content: center; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+/*----------------------------------- Header ----------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    min-height: 5%;
+    color: white;
+}
+
+.grow:hover {
+    transition:all 0.2s;
+    transform: scale(1.2) !important;
+}
+
+.grow:not(hover) {
+    transition:all 0.2s;
+    transform: scale(1) !important;
+}
+    
+/*---------------------------------- Buttom ----------------------------------*/
+
+.buttom {
+    position: fixed;
+    top: 90%;
+    display: flex;
+    width: 100%;
+    min-height: 10%;
+}
+
+/*-------------------------- Texto descripcion index --------------------------*/
+
+.txtind {
+    color: white;
+    font-size: 200%;
+}
+
+/*----------------------------- Boton Conocer mas -----------------------------*/
+
+.cm {
+    width: 14%;
+    height: 110%;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    color: white;
+    font-size: 150%;
+}
+
+.cm:hover {
+    transition:all 0.2s;
+    transform: scale(1.2) !important;
+}
+
+.cm:not(hover) {
+    transition:all 0.2s;
+    transform: scale(1) !important;
+}
+
+/*------------------------------- Iconos index -------------------------------*/
+
+.ico{
+    color: white;
+    font-size: 250%;
+}
+
+.ico:hover {
+    transition:all 0.2s;
+    transform: scale(1.5) !important;
+}
+
+.ico:not(hover) {
+    transition:all 0.2s;
+    transform: scale(1) !important;
+}
+
+.actual{
+    color: rgba(127, 127, 127, 0.7);
+    font-size: 250%;
+}
+
+/*---------------------------------- a href ---------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+.menub{
+    margin-top: 8px;
+    color: white;
+    font-size: 150%;
+}
+
+.sb{
+    margin-top: 7px;
+    margin-left: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 13px;
+    background-color: rgba(0, 0, 0, 0.7);;
+    border-radius: 20px;
+}
+.sb input:focus{
+    border-style: none;
+    border-color: transparent;
+}
+.sb input{
+    border:none;
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+.sbb{
+    color: white;
+    font-size: 100%;
+    
+}
+
+.txtblanc{color: white;}
+
+.agus{
+    position: fixed;
+    right: -300;
+    z-index: 150;
+}
+#menu:click #agus {
+    background-color: blue;
+}
